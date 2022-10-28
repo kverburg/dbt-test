@@ -7,7 +7,10 @@ orders as (
 )
 
 select 
-    *
+    orders.order_id,
+    orders.customer_id,
+    payments.orders.order_date,
+    amount
 from
     orders
     left join payments
