@@ -11,8 +11,10 @@ models:
           - not_null
 
   - name: stg_orders
+    description: Staged order data from our jaffle shop app.
     columns:
       - name: order_id
+        description: Primary key for stg_orders
         tests:
           - unique
           - not_null
