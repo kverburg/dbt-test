@@ -4,4 +4,4 @@ select
     order_date,
     status
 
-from  gpi-civis-gcp.dbt_test_jaffle_shop.shop_orders
+from  {{ source('jaffle_shop', 'shop_orders') }}
