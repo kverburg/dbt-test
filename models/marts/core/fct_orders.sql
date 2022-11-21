@@ -19,7 +19,7 @@ select
     orders.order_id,
     orders.customer_id,
     orders.order_date,
-    amount
+    order_payments.amount
 from
     orders
     left join order_payments 
