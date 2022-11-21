@@ -18,7 +18,7 @@ order_payments as (
 select 
     orders.order_id,
     orders.customer_id,
-    orders.order_date,
+    order_date,
     order_payments.amount
 from
     orders
